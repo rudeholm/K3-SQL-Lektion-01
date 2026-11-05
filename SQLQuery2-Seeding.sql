@@ -12,4 +12,6 @@ VALUES	('SVR-PROD-SQL01', '10.0.1.10', 'Prod', 2),
 
 SELECT * FROM Servers;
 
+SELECT ServerName, IpAddress FROM Servers
+	WHERE Environment = 'Prod';
 
