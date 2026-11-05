@@ -27,4 +27,13 @@ DELETE FROM Servers WHERE Id = 2;
 ALTER TABLE Servers
 	ADD CONSTRAINT UQ_Servers_IpAddress UNIQUE (IpAddress);
 
+-- Uppgift 14
+-- Lägg till en ny kolumn i tabellen Servers med namnet DateCreated av datatypen
+-- DATETIME2 som automatiskt får dagens datum och klockslag som standardvärde
+-- (DEFAULT) om inget anges.
+ALTER TABLE Servers
+	ADD DateCreated DATETIME2 NOT NULL DEFAULT GETDATE();
+
+
+
 SELECT * FROM Servers;
