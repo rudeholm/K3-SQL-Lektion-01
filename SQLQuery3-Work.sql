@@ -34,6 +34,4 @@ ALTER TABLE Servers
 ALTER TABLE Servers
 	ADD DateCreated DATETIME2 NOT NULL DEFAULT GETDATE();
 
-
-
-SELECT * FROM Servers;
+-- SELECT * FROM Servers;
